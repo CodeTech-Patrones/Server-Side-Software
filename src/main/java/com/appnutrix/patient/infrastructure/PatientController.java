@@ -29,7 +29,7 @@ public class PatientController {
     @ApiOperation(value = "Listar Patients", notes = "Método para listar todos los patients")
     @ApiResponses({
             @ApiResponse(code = 201, message = "Patients encontrados"),
-            @ApiResponse(code = 404, message = "Clients no encontrados")
+            @ApiResponse(code = 404, message = "Patients no encontrados")
     })
     public ResponseEntity<List<Patient>> findAll() {
         try {
