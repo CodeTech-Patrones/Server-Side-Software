@@ -44,10 +44,10 @@ public class PatientController {
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Buscar Client por Id", notes = "Método para encontrar un Client por Id")
+    @ApiOperation(value = "Buscar Patient por Id", notes = "Método para encontrar un Patient por Id")
     @ApiResponses({
-            @ApiResponse(code = 201, message = "Client encontrado"),
-            @ApiResponse(code = 404, message = "Client no encontrado")
+            @ApiResponse(code = 201, message = "Patient encontrado"),
+            @ApiResponse(code = 404, message = "Patient no encontrado")
     })
     public ResponseEntity<Patient> findById(@PathVariable("id") Integer id)
     {
