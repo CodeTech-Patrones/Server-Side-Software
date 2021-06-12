@@ -28,7 +28,7 @@ public class PatientController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Listar Patients", notes = "Método para listar todos los patients")
     @ApiResponses({
-            @ApiResponse(code = 201, message = "Clients encontrados"),
+            @ApiResponse(code = 201, message = "Patients encontrados"),
             @ApiResponse(code = 404, message = "Clients no encontrados")
     })
     public ResponseEntity<List<Patient>> findAll() {
