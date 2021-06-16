@@ -1,5 +1,6 @@
 package com.appnutrix.patient.domain;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,8 +37,8 @@ public class PatientServiceImpl implements IPatientService {
 
     @Override
     @Transactional
-    public Patient save(Patient client) throws Exception {
-        return patientRepository.save(client);
+    public Patient save(Patient patient) throws Exception {
+        return patientRepository.save(patient);
     }
 
     @Override

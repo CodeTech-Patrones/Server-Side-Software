@@ -1,5 +1,4 @@
-package com.appnutrix.nutritionist.infraestructure;
-
+package com.appnutrix.nutritionist.infrastructure;
 
 import com.appnutrix.nutritionist.domain.INutritionistService;
 import com.appnutrix.nutritionist.domain.Nutritionist;

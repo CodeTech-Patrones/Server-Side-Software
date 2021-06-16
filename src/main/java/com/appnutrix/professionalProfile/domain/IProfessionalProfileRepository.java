@@ -1,7 +1,7 @@
 package com.appnutrix.professionalProfile.domain;
 
-import com.appnutrix.professionalProfile.domain.ProfessionalProfile;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 
 

@@ -6,7 +6,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "patient")
@@ -14,6 +16,17 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Patient implements Serializable {
+
+    public Patient(Integer id, String username, String password, String firstName, String lastName, String email, Date createdAt) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.createdAt = createdAt;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -31,6 +44,6 @@ public class Patient implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
 
-
-
+    @OneToMany(mappedBy = "patient")
+    private List<PatientFavoriteRecipes> patientAssoc;
 }

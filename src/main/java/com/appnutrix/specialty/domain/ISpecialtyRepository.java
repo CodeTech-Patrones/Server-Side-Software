@@ -1,6 +1,5 @@
 package com.appnutrix.specialty.domain;
 
-import com.appnutrix.specialty.domain.Specialty;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

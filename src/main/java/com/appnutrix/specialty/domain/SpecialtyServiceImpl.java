@@ -1,15 +1,12 @@
 package com.appnutrix.specialty.domain;
 
-import com.appnutrix.specialty.domain.Specialty;
-import com.appnutrix.specialty.domain.ISpecialtyRepository;
-import com.appnutrix.specialty.domain.ISpecialtyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-/*
+
 @Service
 @Transactional(readOnly = true)
 public class SpecialtyServiceImpl implements ISpecialtyService {
@@ -44,4 +41,3 @@ public class SpecialtyServiceImpl implements ISpecialtyService {
         return specialtyRepository.findByInstitutionName(institution_name);
     }
 }
-*/

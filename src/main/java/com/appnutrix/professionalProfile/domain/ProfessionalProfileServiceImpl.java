@@ -1,13 +1,6 @@
 package com.appnutrix.professionalProfile.domain;
 
-public class ProfessionalProfileServiceImpl {
-}
 
-/*package com.appnutrix.professionalProfile.domain;
-
-import com.appnutrix.professionalProfile.domain.ProfessionalProfile;
-import com.appnutrix.professionalProfile.domain.IProfessionalProfileRepository;
-import com.appnutrix.professionalProfile.domain.IProfessionalProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -45,4 +38,3 @@ public class ProfessionalProfileServiceImpl implements IProfessionalProfileServi
         return professionalProfileRepository.findById(id);
     }
 }
-*/

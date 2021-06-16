@@ -21,3 +21,4 @@ public interface IRecommendationRepository extends JpaRepository<Recommendation,
     public List<Recommendation> findByNutritionist(@Param("nutritionist_id") Integer nutritionist_id);
 }
 
+

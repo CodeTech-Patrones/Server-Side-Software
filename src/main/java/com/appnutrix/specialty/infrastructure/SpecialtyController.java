@@ -1,5 +1,5 @@
 package com.appnutrix.specialty.infrastructure;
-/*
+
 import com.appnutrix.specialty.domain.Specialty;
 import com.appnutrix.specialty.domain.ISpecialtyService;
 import io.swagger.annotations.Api;
@@ -87,7 +87,7 @@ public class SpecialtyController {
                 return new ResponseEntity<Specialty>(HttpStatus.NOT_FOUND);
             specialty.setId(id);
             specialtyService.save(specialty);
-            return new ResponseEntity<Specialty>(specialty,HttpStatus.OK);
+            return new ResponseEntity<Specialty>(specialty, HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<Specialty>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -132,4 +132,3 @@ public class SpecialtyController {
     }
 
 }
-*/
