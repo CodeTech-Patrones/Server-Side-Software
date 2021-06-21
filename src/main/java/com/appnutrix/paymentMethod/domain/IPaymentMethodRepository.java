@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 public interface IPaymentMethodRepository extends JpaRepository<PaymentMethod, Integer> {
-    @Query("Select b from PaymentMethod b where b.patient.id = :client_id")
-    public List<PaymentMethod> findAllByClient(@Param("client_id") Integer client_id);
+    @Query("Select b from PaymentMethod b where b.patient.id = :patient_id")
+    public List<PaymentMethod> findAllByPatient(@Param("patient_id") Integer patient_id);
 }

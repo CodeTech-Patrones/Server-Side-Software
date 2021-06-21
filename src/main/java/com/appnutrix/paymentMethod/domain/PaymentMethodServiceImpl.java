@@ -36,7 +36,7 @@ public class PaymentMethodServiceImpl implements IPaymentMethodService {
     }
 
     @Override
-    public List<PaymentMethod> findAllByClient(Integer client_id) throws Exception{
-        return paymentMethodRepository.findAllByClient(client_id);
+    public List<PaymentMethod> findAllByPatient(Integer patient_id) throws Exception{
+        return paymentMethodRepository.findAllByPatient(patient_id);
     }
 }

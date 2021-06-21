@@ -63,7 +63,7 @@ public class PaymentMethodController {
 
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Registro de un PaymentMethod de un Client", notes ="Método que registra un PaymentMethod" )
+    @ApiOperation(value = "Registro de un PaymentMethod de un Patient", notes ="Método que registra un PaymentMethod" )
     @ApiResponses({
             @ApiResponse(code=201, message = "PaymentMethod creado"),
             @ApiResponse(code=404, message = "PaymentMethod no creado")
@@ -120,16 +120,16 @@ public class PaymentMethodController {
         }
     }
 
-    @GetMapping(value = "/searchPaymentMethodByClientId/{client_id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Buscar PaymentMethod por client id", notes = "Método para encontrar PaymentMethod por client id")
+    @GetMapping(value = "/searchPaymentMethodByPatientId/{patient_id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Buscar PaymentMethod por patient id", notes = "Método para encontrar PaymentMethod por patient id")
     @ApiResponses({
             @ApiResponse(code = 201, message = "PaymentMethod encontrados"),
             @ApiResponse(code = 404, message = "PaymentMethod no encontrados")
     })
-    public ResponseEntity<List<PaymentMethod>> findByClient(@PathVariable("client_id") Integer client_id)
+    public ResponseEntity<List<PaymentMethod>> findByPatient(@PathVariable("patient_id") Integer patient_id)
     {
         try{
-            List<PaymentMethod> paymentMethods = paymentMethodService.findAllByClient(client_id);
+            List<PaymentMethod> paymentMethods = paymentMethodService.findAllByPatient(patient_id);
             if(paymentMethods.size()>0)
                 return new ResponseEntity<List<PaymentMethod>>(paymentMethods, HttpStatus.OK);
             return new ResponseEntity<List<PaymentMethod>>(HttpStatus.NOT_FOUND);

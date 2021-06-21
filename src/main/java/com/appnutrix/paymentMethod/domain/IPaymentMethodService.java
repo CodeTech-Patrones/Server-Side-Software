@@ -8,5 +8,5 @@ public interface IPaymentMethodService{
     void delete(Integer id) throws Exception;
     List<PaymentMethod> getAll() throws  Exception;
     Optional<PaymentMethod> getById(Integer id) throws Exception;
-    public List<PaymentMethod> findAllByClient(Integer client_id) throws Exception;
+    public List<PaymentMethod> findAllByPatient(Integer patient_id) throws Exception;
 }
