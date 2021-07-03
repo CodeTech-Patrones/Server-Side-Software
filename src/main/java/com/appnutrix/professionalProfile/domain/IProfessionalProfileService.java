@@ -8,6 +8,7 @@ public interface IProfessionalProfileService {
     void delete(Integer id) throws Exception;
     List<ProfessionalProfile> getAll() throws  Exception;
     Optional<ProfessionalProfile> getById(Integer id) throws Exception;
+    public ProfessionalProfile findByNutritionist(Integer nutritionist_id) throws Exception;
 }
 
 

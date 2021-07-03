@@ -5,6 +5,7 @@ import com.appnutrix.patient.infraestructure.persistance.IPatientFavoriteRecipes
 import com.appnutrix.patient.domain.Patient;
 import com.appnutrix.patient.application.PatientServiceImpl;
 import com.appnutrix.recipe.application.RecipeServiceImpl;
+import com.appnutrix.recipe.domain.IRecipeService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-@WebMvcTest(controllers =  PatientController.class)
+@WebMvcTest(controllers = PatientController.class)
 @ActiveProfiles("test")
 public class PatientControllerTest {
 

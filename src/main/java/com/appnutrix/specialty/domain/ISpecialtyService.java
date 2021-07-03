@@ -14,4 +14,5 @@ public interface ISpecialtyService /*extends CrudService<Specialty>*/{
     List<Specialty> getAll() throws  Exception;
     Optional<Specialty> getById(Integer id) throws Exception;
     public List<Specialty> findByInstitutionName(String institution_name) throws Exception;
+    public Specialty findByNameAndInstitution(String name, String institution_name) throws Exception;
 }

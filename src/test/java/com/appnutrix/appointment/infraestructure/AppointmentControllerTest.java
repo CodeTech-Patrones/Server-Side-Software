@@ -4,6 +4,7 @@ import com.appnutrix.appointment.api.AppointmentController;
 import com.appnutrix.appointment.domain.Appointment;
 import com.appnutrix.appointment.application.AppointmentServiceImpl;
 import com.appnutrix.diet.domain.Diet;
+import com.appnutrix.diet.domain.IDietService;
 import com.appnutrix.nutritionist.domain.Nutritionist;
 import com.appnutrix.patient.domain.Patient;
 import org.junit.jupiter.api.BeforeEach;
@@ -33,6 +34,8 @@ public class AppointmentControllerTest {
 
     @MockBean
     private AppointmentServiceImpl appointmentService;
+    @MockBean
+    private IDietService dietService;
 
     private List<Appointment> appointmentList;
     private List<Patient> patientList;
