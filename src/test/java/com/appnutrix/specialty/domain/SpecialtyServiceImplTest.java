@@ -1,5 +1,7 @@
 package com.appnutrix.specialty.domain;
 
+import com.appnutrix.specialty.application.SpecialtyServiceImpl;
+import com.appnutrix.specialty.infrastructure.persistance.ISpecialtyRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

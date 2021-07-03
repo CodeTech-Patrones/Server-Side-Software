@@ -1,13 +1,12 @@
 package com.appnutrix.diet.infraestructure;
 
 import com.appnutrix.diet.domain.Diet;
-import com.appnutrix.diet.domain.DietServiceImpl;
-import com.appnutrix.diet.domain.IDietRecipesRepository;
-import com.appnutrix.diet.infrastructure.DietController;
+import com.appnutrix.diet.application.DietServiceImpl;
+import com.appnutrix.diet.infrastructure.persistance.IDietRecipesRepository;
+import com.appnutrix.diet.api.DietController;
 import com.appnutrix.recipe.domain.IRecipeService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;

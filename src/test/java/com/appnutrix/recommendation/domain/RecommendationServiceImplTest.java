@@ -1,6 +1,8 @@
 package com.appnutrix.recommendation.domain;
 
 import com.appnutrix.nutritionist.domain.Nutritionist;
+import com.appnutrix.recommendation.application.RecommendationServiceImpl;
+import com.appnutrix.recommendation.infraestructure.persistance.IRecommendationRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -18,7 +20,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
 public class RecommendationServiceImplTest {

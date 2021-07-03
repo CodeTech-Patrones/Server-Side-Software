@@ -1,5 +1,7 @@
 package com.appnutrix.bill.domain;
 
+import com.appnutrix.bill.application.BillServiceImpl;
+import com.appnutrix.bill.infraestructure.persistance.IBillRepository;
 import com.appnutrix.patient.domain.Patient;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

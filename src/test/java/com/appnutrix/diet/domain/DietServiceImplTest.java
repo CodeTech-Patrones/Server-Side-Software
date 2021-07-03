@@ -1,5 +1,7 @@
 package com.appnutrix.diet.domain;
 
+import com.appnutrix.diet.application.DietServiceImpl;
+import com.appnutrix.diet.infrastructure.persistance.IDietRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

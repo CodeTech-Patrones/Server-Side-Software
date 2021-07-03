@@ -1,6 +1,8 @@
 package com.appnutrix.paymentMethod.domain;
 
 import com.appnutrix.patient.domain.Patient;
+import com.appnutrix.paymentMethod.application.PaymentMethodServiceImpl;
+import com.appnutrix.paymentMethod.infrastructure.persistance.IPaymentMethodRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

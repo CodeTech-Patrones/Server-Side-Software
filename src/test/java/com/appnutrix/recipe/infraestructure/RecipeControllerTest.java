@@ -2,8 +2,8 @@ package com.appnutrix.recipe.infraestructure;
 
 import com.appnutrix.nutritionist.domain.Nutritionist;
 import com.appnutrix.recipe.domain.Recipe;
-import com.appnutrix.recipe.domain.RecipeServiceImpl;
-import com.appnutrix.recipe.infrastructure.RecipeController;
+import com.appnutrix.recipe.application.RecipeServiceImpl;
+import com.appnutrix.recipe.api.RecipeController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

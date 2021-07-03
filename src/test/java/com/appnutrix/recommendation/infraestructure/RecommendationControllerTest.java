@@ -1,18 +1,16 @@
 package com.appnutrix.recommendation.infraestructure;
 
 import com.appnutrix.nutritionist.domain.Nutritionist;
+import com.appnutrix.recommendation.api.RecommendationController;
 import com.appnutrix.recommendation.domain.Recommendation;
-import com.appnutrix.recommendation.domain.RecommendationServiceImpl;
-import com.appnutrix.recommendation.infraestructure.RecommendationController;
+import com.appnutrix.recommendation.application.RecommendationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.data.repository.query.Param;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

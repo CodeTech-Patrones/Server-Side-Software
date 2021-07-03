@@ -1,6 +1,8 @@
 package com.appnutrix.professionalProfile.domain;
 
 import com.appnutrix.nutritionist.domain.Nutritionist;
+import com.appnutrix.professionalProfile.application.ProfessionalProfileServiceImpl;
+import com.appnutrix.professionalProfile.infrastructure.persistance.IProfessionalProfileRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

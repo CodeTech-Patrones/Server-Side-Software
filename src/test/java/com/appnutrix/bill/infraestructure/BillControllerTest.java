@@ -1,7 +1,8 @@
 package com.appnutrix.bill.infraestructure;
 
+import com.appnutrix.bill.api.BillController;
 import com.appnutrix.bill.domain.Bill;
-import com.appnutrix.bill.domain.BillServiceImpl;
+import com.appnutrix.bill.application.BillServiceImpl;
 import com.appnutrix.patient.domain.Patient;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

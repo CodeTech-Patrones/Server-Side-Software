@@ -1,10 +1,10 @@
 package com.appnutrix.professionalProfile.infraestructure;
 
 import com.appnutrix.nutritionist.domain.Nutritionist;
-import com.appnutrix.professionalProfile.domain.IProfessionalSpecialtiesRepository;
+import com.appnutrix.professionalProfile.infrastructure.persistance.IProfessionalSpecialtiesRepository;
 import com.appnutrix.professionalProfile.domain.ProfessionalProfile;
-import com.appnutrix.professionalProfile.domain.ProfessionalProfileServiceImpl;
-import com.appnutrix.professionalProfile.infrastructure.ProfessionalProfileController;
+import com.appnutrix.professionalProfile.application.ProfessionalProfileServiceImpl;
+import com.appnutrix.professionalProfile.api.ProfessionalProfileController;
 import com.appnutrix.specialty.domain.ISpecialtyService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

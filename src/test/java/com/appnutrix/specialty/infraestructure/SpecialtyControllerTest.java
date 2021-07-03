@@ -1,8 +1,8 @@
 package com.appnutrix.specialty.infraestructure;
 
 import com.appnutrix.specialty.domain.Specialty;
-import com.appnutrix.specialty.domain.SpecialtyServiceImpl;
-import com.appnutrix.specialty.infrastructure.SpecialtyController;
+import com.appnutrix.specialty.application.SpecialtyServiceImpl;
+import com.appnutrix.specialty.api.SpecialtyController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

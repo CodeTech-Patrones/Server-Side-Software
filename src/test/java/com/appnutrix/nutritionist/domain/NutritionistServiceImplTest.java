@@ -1,5 +1,7 @@
 package com.appnutrix.nutritionist.domain;
 
+import com.appnutrix.nutritionist.application.NutritionistServiceImpl;
+import com.appnutrix.nutritionist.infrastructure.persistance.INutritionistRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

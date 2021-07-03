@@ -1,9 +1,10 @@
 package com.appnutrix.patient.infraestructure;
 
-import com.appnutrix.patient.domain.IPatientFavoriteRecipesRepository;
+import com.appnutrix.patient.api.PatientController;
+import com.appnutrix.patient.infraestructure.persistance.IPatientFavoriteRecipesRepository;
 import com.appnutrix.patient.domain.Patient;
-import com.appnutrix.patient.domain.PatientServiceImpl;
-import com.appnutrix.recipe.domain.RecipeServiceImpl;
+import com.appnutrix.patient.application.PatientServiceImpl;
+import com.appnutrix.recipe.application.RecipeServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

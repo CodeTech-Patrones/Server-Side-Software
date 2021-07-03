@@ -2,8 +2,8 @@ package com.appnutrix.paymentMethod.infraestructure;
 
 import com.appnutrix.patient.domain.Patient;
 import com.appnutrix.paymentMethod.domain.PaymentMethod;
-import com.appnutrix.paymentMethod.domain.PaymentMethodServiceImpl;
-import com.appnutrix.paymentMethod.infrastructure.PaymentMethodController;
+import com.appnutrix.paymentMethod.application.PaymentMethodServiceImpl;
+import com.appnutrix.paymentMethod.api.PaymentMethodController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

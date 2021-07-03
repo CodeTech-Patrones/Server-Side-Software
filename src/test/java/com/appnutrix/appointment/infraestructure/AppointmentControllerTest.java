@@ -1,7 +1,8 @@
 package com.appnutrix.appointment.infraestructure;
 
+import com.appnutrix.appointment.api.AppointmentController;
 import com.appnutrix.appointment.domain.Appointment;
-import com.appnutrix.appointment.domain.AppointmentServiceImpl;
+import com.appnutrix.appointment.application.AppointmentServiceImpl;
 import com.appnutrix.diet.domain.Diet;
 import com.appnutrix.nutritionist.domain.Nutritionist;
 import com.appnutrix.patient.domain.Patient;
