@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 
 public class Logger {
 
+
     private static Logger logger = null;
 
     private final String logFile = "demo_better_log.txt";
